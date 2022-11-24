@@ -55,11 +55,3 @@ class MyClient(discord.Client):
     async def on_ready(self):
         print(f'Logged in as {self.user} (ID: {self.user.id})')
         print('------')
-
-
-def main():
-    intents = discord.Intents.default()
-    intents.message_content = True
-
-    client = MyClient(intents=intents)
-    client.run('ODI0NjYxNjMyODA2NDIwNTYw.GmMC5f.2-smjJh3GCJ2iBi8VcK2jwr2LQJ9OoJRFpStG0')
